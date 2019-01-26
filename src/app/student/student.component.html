@@ -1,0 +1,4 @@
+<ul>
+  <li *ngFor="let row of students" [class.selected]="row === selectedStudent" (click)="onselectStudent(row)">
+    {{row.id}}{{row.name}}</li>
+</ul>

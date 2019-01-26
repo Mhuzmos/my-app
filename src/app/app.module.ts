@@ -5,21 +5,25 @@ import { AppComponent } from './app.component';
 
 import { HeaderModule } from './header/header.module';
 
-import { BodyAreaComponent } from './body-area/body-area.component';
-import { FooterAreaComponent } from './footer-area/footer-area.component';
+
 import { GreeterModule } from './greeter/greeter.module';
+
+import { StudentModule } from './student/student.module';
+import { FooterAreaModule } from './footer-area/footer-area.module';
+import { BodyAreaModule } from './body-area/body-area.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BodyAreaComponent,
-    FooterAreaComponent
+    AppComponent
   ],
   imports: [
     HeaderModule,
     FormsModule,
     BrowserModule,
-    GreeterModule
+    GreeterModule,
+    StudentModule,
+    FooterAreaModule,
+    BodyAreaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
